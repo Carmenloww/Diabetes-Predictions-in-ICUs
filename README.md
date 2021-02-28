@@ -29,3 +29,13 @@ Our communication protocols will consist of using slack to keep in contact in a 
 7. PostgresSQL requires connection with AWS RDS - created and connected to server in PGAdmin4
 8. Created query.sql file to save query to review table data and join tables
 9. Exported sqlite3 db to file in Resources folder
+
+### Machine Learning Model
+1. Which model did you choose and why?
+We chose a classification model for this project because we want to build a model that can predict whether a patient admitted to an ICU has been diagnosed with Diabetes Mellitus.
+2. How are you training your model?
+We will be using the TrainingWiDS2021.csv dataset to build a model with variables including age, bmi, ethnicity and gender.
+3. What is the model's accuracy?
+The model's accuracy is 77.58%
+4. How does this model work?
+This mockup model takes into account of ICU patients' age, bmi, ethnicity and gender to determine whether the patient has Diabetes Mellitus. Running a Logistic Regression algorithm will help predict a class label for this sample of data. The results will include 0 for no diabetes mellitus and 1 for diabetes mellitus. 
