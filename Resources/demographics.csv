@@ -1,0 +1,64 @@
+﻿encounter_id,hospital_id,age,bmi,elective_surgery,ethnicity,gender,height,hospital_admit_source,icu_admit_source,icu_id,icu_stay_type,icu_type,pre_icu_los_days,readmission_status,weight
+232100,89,67,28.14629137,0,Caucasian,M,167.64,Direct Admit,Accident & Emergency,133,admit,Med-Surg ICU,0,0,79.1
+275481,89,60,34.57455895,0,Caucasian,M,177.8,Direct Admit,Accident & Emergency,133,admit,Med-Surg ICU,0.047222222,0,109.3
+278577,89,66,25.77592517,1,Caucasian,M,185.4,Operating Room,Operating Room / Recovery,133,admit,Med-Surg ICU,1.147222222,0,88.6
+278295,89,55,56.65923818,0,Other/Unknown,F,162.6,Operating Room,Operating Room / Recovery,133,admit,Med-Surg ICU,0.127777778,0,149.8
+236541,89,21,22.18076366,0,Caucasian,M,182.9,Direct Admit,Accident & Emergency,133,admit,Med-Surg ICU,0,0,74.2
+155109,89,54,20.38538435,0,Caucasian,F,172.7,Direct Admit,Accident & Emergency,133,admit,Med-Surg ICU,0,0,60.8
+229083,89,83,33.24664243,0,Caucasian,M,162.6,Direct Admit,Accident & Emergency,133,admit,Med-Surg ICU,0,0,87.9
+268637,89,19,23.16947331,0,Native American,M,175.3,Direct Admit,Accident & Emergency,133,admit,Med-Surg ICU,0,0,71.2
+190808,174,53,30.7503075,0,Caucasian,F,162.6,Direct Admit,Accident & Emergency,236,admit,Med-Surg ICU,0.006944444,0,81.3
+181570,98,73,30.00809045,0,Caucasian,M,172.7,Emergency Department,Accident & Emergency,267,admit,Med-Surg ICU,4.2,0,89.5
+219828,55,56,22.83297162,0,Caucasian,M,172.7,Emergency Department,Accident & Emergency,391,admit,CSICU,0.030555556,0,68.1
+208237,161,56,18.97453196,0,Caucasian,F,154,Emergency Department,Accident & Emergency,408,admit,CSICU,0.007638889,0,45
+200621,10,55,23.79763746,1,Caucasian,M,185.4,Floor,Operating Room / Recovery,428,admit,Med-Surg ICU,3.239583333,0,81.8
+205887,10,83,26.59768633,0,Caucasian,F,165.1,Recovery Room,Operating Room / Recovery,425,admit,Cardiac ICU,0.008333333,0,72.5
+228263,109,85,29.51801182,0,Caucasian,M,180.34,Recovery Room,Operating Room / Recovery,429,admit,Cardiac ICU,0.132638889,0,96
+261059,70,76,30.30548907,0,African American,F,157,Other Hospital,Other Hospital,464,admit,CCU-CTICU,0.007638889,0,74.7
+259524,100,63,17.11749789,0,Caucasian,M,182,Direct Admit,Accident & Emergency,495,admit,Med-Surg ICU,0,0,56.7
+263966,100,51,42.90714743,0,Caucasian,F,163,Operating Room,Operating Room / Recovery,495,admit,Med-Surg ICU,0.169444444,0,114
+204348,100,64,22.96535205,0,Caucasian,M,177.8,Operating Room,Operating Room / Recovery,487,admit,MICU,0.6,0,72.6
+278971,186,50,34.0410284,0,Caucasian,M,183,Operating Room,Operating Room / Recovery,498,admit,Med-Surg ICU,0.075694444,0,114
+241705,100,75,17.33434114,0,Caucasian,F,157.5,Operating Room,Operating Room / Recovery,490,admit,Med-Surg ICU,0,0,43
+173534,100,60,40.16326531,0,Caucasian,F,175,Operating Room,Operating Room / Recovery,495,admit,Med-Surg ICU,0.44375,0,123
+168817,100,71,45.00258264,0,Caucasian,M,176,Other Hospital,Other Hospital,495,admit,Med-Surg ICU,0,0,139.4
+228860,100,68,42.45577523,0,Caucasian,F,155,Step-Down Unit (SDU),Floor,490,admit,Med-Surg ICU,0.090277778,0,102
+239494,189,53,39.93688461,0,Caucasian,F,165.1,Emergency Department,Accident & Emergency,543,admit,Med-Surg ICU,0.150694444,0,108.86
+165848,133,64,36.0008906,0,Caucasian,M,182.8,Emergency Department,Accident & Emergency,561,admit,Med-Surg ICU,0.163888889,0,120.3
+225154,36,66,28.59375,1,Caucasian,F,160,Operating Room,Operating Room / Recovery,905,admit,Med-Surg ICU,0,0,73.2
+218156,110,37,33.27462276,0,African American,F,165.1,Direct Admit,Other Hospital,969,admit,CCU-CTICU,0,0,90.7
+219872,28,60,21.89164371,1,Other/Unknown,M,165,Operating Room,Operating Room / Recovery,998,admit,Med-Surg ICU,5.890972222,0,59.6
+179781,28,48,23.62505284,0,Caucasian,M,175.3,Recovery Room,Operating Room / Recovery,998,admit,Med-Surg ICU,0.170833333,0,72.6
+157280,203,78,30.29920465,0,Caucasian,M,178,Emergency Department,Accident & Emergency,996,admit,CCU-CTICU,0,0,96
+165410,203,62,16.31633715,1,Caucasian,F,155,Floor,Operating Room / Recovery,975,admit,Med-Surg ICU,3.202083333,0,39.2
+277268,86,24,27.7734375,0,Asian,F,160,Operating Room,Operating Room / Recovery,1027,admit,SICU,0.036805556,0,71.1
+242897,86,51,25.93882739,0,Caucasian,M,177.8,Other Hospital,Other Hospital,1027,admit,SICU,0,0,82
+170750,86,23,39.71441928,0,Caucasian,F,162.6,Emergency Department,Accident & Emergency,1037,admit,SICU,0.246527778,0,105
+149890,86,46,24.72696485,0,Caucasian,F,142.2,Operating Room,Operating Room / Recovery,1027,admit,SICU,0.659722222,0,50
+164678,86,60,36.75365031,0,Caucasian,M,173,Other Hospital,Other Hospital,1027,admit,SICU,0.003472222,0,110
+274945,86,63,26.00709486,1,Caucasian,M,182.9,Operating Room,Operating Room / Recovery,1027,admit,SICU,0.393055556,0,87
+253164,175,45,25.74074074,1,Caucasian,M,180,Operating Room,Operating Room / Recovery,1059,admit,SICU,0.631944444,0,83.4
+206965,175,71,25.99591237,0,African American,F,167,Emergency Department,Accident & Emergency,1063,admit,MICU,0.236111111,0,72.5
+197896,175,69,26.70891806,1,African American,M,188,Recovery Room,Operating Room / Recovery,1071,admit,CCU-CTICU,0.484027778,0,94.4
+178722,175,25,29.85734124,1,Caucasian,M,178,Operating Room,Operating Room / Recovery,1059,admit,SICU,0.203472222,0,94.6
+165840,175,37,22.20795024,0,African American,M,172,Emergency Department,Accident & Emergency,1059,admit,SICU,0.152083333,0,65.7
+214830,163,72,29.26632773,1,Caucasian,F,147.3,Operating Room,Operating Room / Recovery,1078,admit,Med-Surg ICU,0.564583333,0,63.5
+186329,163,47,25.27878375,0,Caucasian,M,167,Direct Admit,Accident & Emergency,1078,admit,Med-Surg ICU,0.016666667,0,70.5
+160837,163,50,23.64909499,0,Caucasian,M,174,Operating Room,Operating Room / Recovery,1078,admit,Med-Surg ICU,0.789583333,0,71.6
+259687,163,20,18.80047241,0,Asian,M,177,Emergency Department,Accident & Emergency,1078,admit,Med-Surg ICU,0.159027778,0,58.9
+162833,163,72,34.54293629,1,Caucasian,M,190,Recovery Room,Operating Room / Recovery,1078,admit,Med-Surg ICU,0.432638889,0,124.7
+154608,163,80,33.24534732,1,Caucasian,M,173,Recovery Room,Operating Room / Recovery,1078,admit,Med-Surg ICU,0.178472222,0,99.5
+148438,163,30,31.79012346,0,African American,M,180,Direct Admit,Accident & Emergency,1078,admit,Med-Surg ICU,0.032638889,0,103
+188879,163,57,28.57791113,0,Caucasian,M,182.9,Operating Room,Operating Room / Recovery,1078,admit,Med-Surg ICU,5.105555556,0,95.6
+222233,163,65,29.93615455,1,Caucasian,M,165.1,Operating Room,Operating Room / Recovery,1078,admit,Med-Surg ICU,1.19375,0,81.6
+252570,163,56,31.0150703,1,Caucasian,F,162.6,Operating Room,Operating Room / Recovery,1078,admit,Med-Surg ICU,0.645138889,0,82
+252586,163,56,27.44772472,1,Caucasian,M,167.6,Operating Room,Operating Room / Recovery,1078,admit,Med-Surg ICU,0.393055556,0,77.1
+276227,163,71,21.5756047,1,Caucasian,F,149,Operating Room,Operating Room / Recovery,1078,admit,Med-Surg ICU,0.524305556,0,47.9
+164884,163,70,24.0983407,1,Caucasian,F,157,Operating Room,Operating Room / Recovery,1078,admit,Med-Surg ICU,0.684027778,0,59.4
+222504,163,56,43.31450094,0,Caucasian,M,177,Other Hospital,Other Hospital,1078,admit,Med-Surg ICU,0.058333333,0,135.7
+249131,163,64,30.85960738,1,Caucasian,M,164,Operating Room,Operating Room / Recovery,1078,admit,Med-Surg ICU,0.25,0,83
+226636,163,28,20.89965398,1,Caucasian,M,170,Recovery Room,Operating Room / Recovery,1078,admit,Med-Surg ICU,5.54375,0,60.4
+276831,163,40,29.57951194,0,Caucasian,F,171.5,Direct Admit,Accident & Emergency,1078,admit,Med-Surg ICU,0.015972222,0,87
+223598,163,60,39.525303,0,Caucasian,F,162.6,Other Hospital,Other Hospital,1078,admit,Med-Surg ICU,0.005555556,0,104.5
+255666,7,60,28.54119426,0,Caucasian,F,157.5,Direct Admit,Accident & Emergency,1109,admit,Cardiac ICU,0,0,70.8
+230960,7,28,28.65212831,0,Other/Unknown,M,165.1,Direct Admit,Other Hospital,1109,admit,Cardiac ICU,0,0,78.1
