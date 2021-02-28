@@ -52,10 +52,10 @@ Circle: Elaine Martinez: EHM_db2
 3. Created schema.sql file to create 6 tables
 4. encounter_id is the primary key for all tables to rejoin
 5. Test tables with removing NAs using Python, then split to 6 CSV files
-6. Created PostgresSQLv11.9 and sqllite3 DB for testing purposes & comparison to connecting to the model
+6. Created PostgresSQLv11.9 and SQLite3 DB for testing purposes & comparison to connecting to the model
 7. PostgresSQL requires a connection with AWS RDS - created and connected to a server in PGAdmin4
 8. Created query.sql file to save the query to review table data and join tables
-9. Exported sqlite3 DB to file in the Resources folder
+9. Exported SQLite3 DB to file in the Resources folder
 
 ### Machine Learning Model
 
