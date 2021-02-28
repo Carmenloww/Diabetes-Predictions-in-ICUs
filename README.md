@@ -28,6 +28,7 @@ Software:
 - PGAdmin4, 
 - Tableau
 - PostgresSQL
+- SQLite3
 
 ## Questions they hope to answer with the data:
 - Who has diabetes?
