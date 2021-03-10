@@ -13,27 +13,26 @@ Data Source:
 - TrainingWiDS2021.csv
 - DataDictionaryWiDS2021.csv
 - APACHE_comorbidity.csv
-- APACHE_covariate.csv
-- EHM_test_db.csv
 - demographics.csv
 - labs.csv
-- labs_blood_gas.csv
-- sqlite_table_data.csv
 - vitals.csv
-- EHM_test_clean_data.ipynb
 
 Software: 
 - Python 3.9
 - Jupyter Notebook 6.1.4, 
-- PGAdmin4, 
 - Tableau
-- PostgresSQL
-- SQLite3
+- SQLiteStudio
+
+## Hypothesis
+Null Hypothesis: 
+Patients admitted to an ICU has been diagnosed with Diabetes Mellitus
+
+Alternative Hypothesis: 
+Patients admitted to an ICU has not been diagnosed with Diabetes Mellitus.
 
 ## Questions they hope to answer with the data:
-- Who has diabetes?
-- Who does not have diabetes?
-- Whether we can construct a script that suffices to predict who will, under these same circumstances, have diabetes?
+- What are some criteria to diagnose patients with Type 2 Diabetes Mellitus?
+- Whether we can construct a script that suffices to predict who will, under these same circumstances, have diabetes.
 
 ## Communication Protocols:
 Our communication protocols will consist of using slack to keep in contact in a group chat.  Meet during the recommended (Tuesday) and required (Thursday) sessions to work on the project and further discuss the next step. Weekly Zoom calls to discuss the finalization of our decision on our repository to push final codes to the main branch on Sundays.
@@ -43,7 +42,7 @@ Square: Carmen Low: CL
 
 Triangle: Sydney Chen: SC_model, and SC_readme
 
-Circle: Elaine Martinez: EHM_db2
+Circle: Elaine Martinez: EHM_db2.
 
 ## Segment 1 Deliverables:
 
@@ -56,6 +55,7 @@ Circle: Elaine Martinez: EHM_db2
 7. PostgresSQL requires a connection with AWS RDS - created and connected to a server in PGAdmin4
 8. Created query.sql file to save the query to review table data and join tables
 9. Exported SQLite3 DB to file in the Resources folder
+
 
 ### Machine Learning Model
 
