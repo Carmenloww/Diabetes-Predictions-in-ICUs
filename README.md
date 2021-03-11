@@ -3,14 +3,13 @@
 ## Topic:
 To determine whether a patient admitted to an ICU has been diagnosed with a particular type of diabetes, Diabetes Mellitus using data from the first 24 hours of intensive care.
 
-
 ## Reason Selecting Topic:
-We came across the WiDS Datathon which stands for Women in Data Science Datathon and strives to inspire women worldwide to learn more about data science. They also allow women to connect with others in the community and share their interests in a supportive community.
+We came across the WiDS Datathon which stands for Women in Data Science Datathon. They strives to inspire women worldwide to learn more about data science and allow women to connect and share their interests in a supportive community.
 
 We decided to take on this project from [Kaggle](https://www.kaggle.com/c/widsdatathon2021/).
 
 
-## Database/Resources:
+## Description of Data Sources: 
 Data Source: 
 - TrainingWiDS2021.csv
 - DataDictionaryWiDS2021.csv
@@ -25,18 +24,16 @@ Software:
 - Tableau
 - SQLiteStudio
 
-## Hypothesis
-Null Hypothesis: 
-Patients admitted to an ICU has been diagnosed with Diabetes Mellitus
+## Hypothesis:
+Null Hypothesis: Patients admitted to an ICU has been diagnosed with Diabetes Mellitus
 
-Alternative Hypothesis: 
-Patients admitted to an ICU has not been diagnosed with Diabetes Mellitus.
+Alternative Hypothesis: Patients admitted to an ICU has not been diagnosed with Diabetes Mellitus.
 
 ## Questions they hope to answer with the data:
 - What are some criteria to diagnose patients with Type 2 Diabetes Mellitus?
 - Whether we can construct a script that suffices to predict who will, under these same circumstances, have diabetes.
 
-## Segment 1 Deliverables:
+## Segment 1 Deliverables
 
 1. Reviewed Kaggle dataset
 2. Separate into 6 tables based on dataset category
@@ -48,31 +45,31 @@ Patients admitted to an ICU has not been diagnosed with Diabetes Mellitus.
 8. Created query.sql file to save the query to review table data and join tables
 9. Exported SQLite3 DB to file in the Resources folder
 
-## Machine Learning Model
+## Machine Learning Model:
+### Description of preliminary data preprocessing 
 
-1. Which model did you choose and why? 
+The dataset has a total of 180 columns and 130,157 rows. Many of the values are missing or filled with NA. 
 
-    We chose a classification model for this project because we want to build a model that can predict whether a patient admitted to an ICU has been diagnosed with Diabetes Mellitus.
+### Description of preliminary feature engineering and preliminary feature selection, including their decision making process. 
 
-2. How are you training your model?
+Through our research, we were able to see the major risk factors of Diabetes Mellitus which includes family history, being overweight, physical inactivity, age, ethnicity, high blood pressure, impaired glucose tolerance. To find the corresponding variables in the dataset, we have chosen 'age', 'bmi', 'ethnicity', 'gender', 'height', 'weight', 'd1_glucose_max', 'd1_mbp_max' to be the features. In addition to finding out whether a patient in the ICU might have diabetes mellitus, we included features of comorbidity. This is the simultaneous presence of two or more diseases or medical conditions in a patient. These features are included in our dataset as 'aids', 'cirrhosis', 'hepatic_failure', 'immunosuppression', 'leukemia', 'lymphoma', and 'solid_tumor_with_metastasis'.
 
-    We will be using the TrainingWiDS2021.csv dataset to build a model with variables including age, BMI, ethnicity, and gender.
+### Description of how data was split into training and testing sets
 
-3. What is the model's accuracy? 
+Dataset is split into 75% training and 25% testing. 
 
-    The model's accuracy is 77.58%
+### Explanation of model choice, including limitations and benefits
 
-4. How does this model work? 
-
-    This mockup model take into an account ICU patients' age, BMI, ethnicity, and gender to determine whether the patient has Diabetes Mellitus. Running a Logistic Regression algorithm will help predict a class label for this sample of data. The results will include 0 for no diabetes mellitus and 1 for diabetes mellitus.
+Since our main goal is to classify a patient with diabetes mellitus or no diabetes mellitus, the Initial approach was a mock model with Logistic Regression. After splitting the dataset into 75% training and 25% testing, the accuracy score is 78.8%. Then we tested the dataset with a decision tree model and random forest model. Both models earned an accuracy score of 71.7% and 78.8% respectively. Overall, the random forest model is the best model for this project since it can handle missing values and interpret non-linear relationships between variables.
 
 ## Dashboard
-We used Tableau to create our dashboard.
+We will use Tableau to create our dashboard.
 
-## Presentation:
+## Presentation
+Attached is our [Google Slide Presentation](https://docs.google.com/presentation/d/1SHAZMGU8j-jV8phY3CD1I5t1VpVGjprBJdyDsmeiYfk/edit#slide=id.gc3e862a1f2_0_36).
 
 ## Communication Protocols:
-Our communication protocols will consist of using slack to keep in contact in a group chat.  Meet during the recommended (Tuesday) and required (Thursday) sessions to work on the project and further discuss the next step. Weekly Zoom calls to discuss the finalization of our decision on our repository to push final codes to the main branch on Sundays.
+Our communication protocols will consist of using slack to keep in contact in a group chat. Meet during the recommended (Tuesday) and required (Thursday) sessions to work on the project and further discuss the next step. Weekly Zoom calls to discuss the finalization of our decision on our repository to push final codes to the main branch on Sundays.
 
 ## Individual Branches:
 Square: Carmen Low: CL
