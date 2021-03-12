@@ -19,8 +19,7 @@ Data Source:
 - labs.csv
 - vitals.csv
 
-We used TrainingWiDS2021.csv to populate the database and used DataDictionaryWiDS2021.csv for the description of information about the data. We sorted the database into 4 other dataset into APACHE_comorbidity.csv, demographics.csv, labs.csv, and vitals.csv. The APACHE_comorbidity.csv contains the APACHE comorbidity. The demographics.csv contains the demographics information. THe labs.csv contains the lab data and the vitals.csv contains the data of each patient's vitals.
-
+For this analysis, we used the TrainingWiDS2021.csv and the DataDictionaryWiDS2021.csv from the WiDS Datathon dataset. We used TrainingWiDS2021.csv to populate the database and DataDictionaryWiDS2021.csv for the description of information about the data. We sorted the TrainingWiDS2021.csv into 4 other dataset into APACHE_comorbidity.csv, demographics.csv, labs.csv, and vitals.csv. The APACHE_comorbidity.csv contains data of the APACHE comorbidity. The demographics.csv contains the demographics of the patient. The labs.csv contains the data of the lab results and the vitals.csv contains the data of the patient's vitals.
 
 Software: 
 - Python 3.9
@@ -73,6 +72,8 @@ Our main goal is to classify a patient with diabetes mellitus or no diabetes mel
 
 ## Dashboard
 We will use Tableau to create our dashboard. Our interactive element will include ...
+
+We will have a pie chart of gender, Bar graph of age, graph of the 3 model results, Bmi Graph, Day 1 Glucose Max, Day 1 Mean Blood Pressure, Heatmap of features correlation to target.
 
 ## Presentation
 Attached is our [Google Slide Presentation](https://docs.google.com/presentation/d/1SHAZMGU8j-jV8phY3CD1I5t1VpVGjprBJdyDsmeiYfk/edit#slide=id.gc3e862a1f2_0_36).
