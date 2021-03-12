@@ -10,15 +10,17 @@ This year, they are focusing on patient health with the chronic condition of dia
 
 We decided to take on this project from [Kaggle](https://www.kaggle.com/c/widsdatathon2021/).
 
-
 ## Description of Data Sources: 
-Data Source: 
+Data Source:
 - TrainingWiDS2021.csv
-- DataDictionaryWiDS2021.csv
+- DataDictionaryWiDS2021.csv 
 - APACHE_comorbidity.csv
 - demographics.csv
 - labs.csv
 - vitals.csv
+
+We used TrainingWiDS2021.csv to populate the database and used DataDictionaryWiDS2021.csv for the description of information about the data. We sorted the database into 4 other dataset into APACHE_comorbidity.csv, demographics.csv, labs.csv, and vitals.csv. The APACHE_comorbidity.csv contains the APACHE comorbidity. The demographics.csv contains the demographics information. THe labs.csv contains the lab data and the vitals.csv contains the data of each patient's vitals.
+
 
 Software: 
 - Python 3.9
@@ -41,6 +43,8 @@ Alternative Hypothesis: Patients admitted to an ICU has not been diagnosed with 
 
 ### Database interfaces with the project in some format (e.g., scraping updates the database, or database connects to the model) 
 
+![Diabetes_DB_Erd](./Database/diabetes_db_erd.png)
+
 ### Includes at least two tables (or collections, if using MongoDB) 
 
 ### Includes at least one join using the database language (not including any joins in Pandas) 
@@ -48,6 +52,7 @@ Alternative Hypothesis: Patients admitted to an ICU has not been diagnosed with 
 ### Includes at least one connection string (using SQLAlchemy or PyMongo) Note: If you use a SQL database, you must provide your ERD wit
 
 ## Machine Learning Model:
+
 ### Description of preliminary data preprocessing 
 
 The dataset has a total of 180 columns and 130,157 rows. Many of the values are missing or filled with NA. 
@@ -67,7 +72,7 @@ Dataset is split into 75% training and 25% testing.
 Our main goal is to classify a patient with diabetes mellitus or no diabetes mellitus, the Initial approach was a mock model with Logistic Regression. After splitting the dataset into 75% training and 25% testing, the accuracy score is 78.8%. Then we tested the dataset with a decision tree model and random forest model. Both models earned an accuracy score of 71.7% and 78.8% respectively. Overall, the random forest model is the best model for this project since it can handle missing values and interpret non-linear relationships between variables.
 
 ## Dashboard
-We will use Tableau to create our dashboard. 
+We will use Tableau to create our dashboard. Our interactive element will include ...
 
 ## Presentation
 Attached is our [Google Slide Presentation](https://docs.google.com/presentation/d/1SHAZMGU8j-jV8phY3CD1I5t1VpVGjprBJdyDsmeiYfk/edit#slide=id.gc3e862a1f2_0_36).
