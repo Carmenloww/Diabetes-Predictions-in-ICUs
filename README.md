@@ -19,7 +19,17 @@ Data Source:
 - labs.csv
 - vitals.csv
 
-For this analysis, we used the TrainingWiDS2021.csv and the DataDictionaryWiDS2021.csv from the WiDS Datathon dataset. We used TrainingWiDS2021.csv to populate the database and DataDictionaryWiDS2021.csv for the description of information about the data. We sorted the TrainingWiDS2021.csv into 4 other dataset into APACHE_comorbidity.csv, demographics.csv, labs.csv, and vitals.csv. The APACHE_comorbidity.csv contains data of the APACHE comorbidity. The demographics.csv contains the demographics of the patient. The labs.csv contains the data of the lab results and the vitals.csv contains the data of the patient's vitals.
+For this analysis, we used the TrainingWiDS2021.csv and the DataDictionaryWiDS2021.csv from the WiDS Datathon dataset. 
+
+We used TrainingWiDS2021.csv to populate the database and DataDictionaryWiDS2021.csv for the description of information about the data. 
+
+We sorted the TrainingWiDS2021.csv into 4 other dataset into APACHE_comorbidity.csv, demographics.csv, labs.csv, and vitals.csv. 
+
+The APACHE_comorbidity.csv contains data of the APACHE comorbidity. 
+
+The demographics.csv contains the demographics of the patient. 
+
+The labs.csv contains the data of the lab results and the vitals.csv contains the data of the patient's vitals.
 
 Software: 
 - Python 3.9
@@ -48,6 +58,8 @@ Alternative Hypothesis: Patients admitted to an ICU has not been diagnosed with 
 
  The data from the original dataset was split into four csv files to load to the tables. 
  
+ ![TrainingWiDS2021_csv](./Images/TrainingWiDS2021_csv.png)
+
  The tables are joined via the unique Encounter_ID column as the primary key, included in the query.sql file. 
  
  The database is connected to the model using SQLAlchemy.
