@@ -63,7 +63,7 @@ Alternative Hypothesis: Patients admitted to an ICU has not been diagnosed with 
  The tables are joined via the unique Encounter_ID column as the primary key, included in the query.sql file. 
  
  The database is connected to the model using SQLAlchemy.
-![](./Images/)
+![ConnectSQL](./Images/ConnectSQL.png)
 
 ## Machine Learning Model:
 
