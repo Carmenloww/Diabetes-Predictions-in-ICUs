@@ -28,7 +28,7 @@ Software:
 - SQLiteStudio
 
 ## Hypothesis:
-Null Hypothesis: Patients admitted to an ICU has been diagnosed with Diabetes Mellitus
+Null Hypothesis: Patients admitted to an ICU has been diagnosed with Diabetes Mellitus.
 
 Alternative Hypothesis: Patients admitted to an ICU has not been diagnosed with Diabetes Mellitus.
 
@@ -36,19 +36,11 @@ Alternative Hypothesis: Patients admitted to an ICU has not been diagnosed with 
 - What are some criteria to diagnose patients with Type 2 Diabetes Mellitus?
 - Whether we can construct a script that suffices to predict who will, under these same circumstances, have diabetes.
 
-## Database
- 
-### Database stores static data for use during the project 
+## Database:
 
-### Database interfaces with the project in some format (e.g., scraping updates the database, or database connects to the model) 
+ After deciding on the features to use, we selected the relevant data from the Kaggle dataset to create a static sqlite database file using SQLite Studio.  Four tables were identified based on the categories in the data dictionary file  (demographics, vitals, labs and Apache comorbidity).  An ERD (diabetes_db_erd.png) was created initially to view the database schema.  The data from the original dataset was split into four csv files to load to the tables.  The tables are joined via the unique Encounter_ID column as the primary key, included in the query.sql file. The database is connected to the model using SQLAlchemy.
 
 ![Diabetes_DB_Erd](./Database/diabetes_db_erd.png)
-
-### Includes at least two tables (or collections, if using MongoDB) 
-
-### Includes at least one join using the database language (not including any joins in Pandas) 
-
-### Includes at least one connection string (using SQLAlchemy or PyMongo) Note: If you use a SQL database, you must provide your ERD wit
 
 ## Machine Learning Model:
 
@@ -64,12 +56,12 @@ Dataset is split into 75% training and 25% testing.
 ### Explanation of model choice, including limitations and benefits.
 Since our main goal is to classify a patient with diabetes mellitus or no diabetes mellitus, the initial approach was a mock model with Logistic Regression. After splitting the dataset into 75% training and 25% testing, the accuracy score is 78.8%. Then we tested the dataset with a decision tree model and the random forest model. Both models earned an accuracy score of 71.7% and respectively 78.7%. Overall, the logistic regression model is the best model for this project with a sensitivity (recall) rate of 0.95 whereas the decision tree model scored 0.81 and random forest model scored 0.92. Due to the nature of our problem, it is better to have a higher sensitivity so it can detect everyone who might have diabetes mellitus even if it means a certain number of false positive than to miss people who do have diabetes. Afterall, those with a positive result can undergo more testing to confirm or rule out diabetes.
 
-## Dashboard
+## Dashboard:
 We will use Tableau to create our dashboard. Our interactive element will include ...
 
 We will have a pie chart of gender, Bar graph of age, graph of the 3 model results, Bmi Graph, Day 1 Glucose Max, Day 1 Mean Blood Pressure, Heatmap of features correlation to target.
 
-## Presentation
+## Presentation:
 Attached is our [Google Slide Presentation](https://docs.google.com/presentation/d/1SHAZMGU8j-jV8phY3CD1I5t1VpVGjprBJdyDsmeiYfk/edit#slide=id.gc3e862a1f2_0_36).
 
 ## Communication Protocols:
