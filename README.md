@@ -44,13 +44,14 @@ Alternative Hypothesis: Patients admitted to an ICU has not been diagnosed with 
 
  An ERD (diabetes_db_erd.png) was created initially to view the database schema. 
 
+ ![Diabetes_DB_Erd](./Database/diabetes_db_erd.png)
+
  The data from the original dataset was split into four csv files to load to the tables. 
  
  The tables are joined via the unique Encounter_ID column as the primary key, included in the query.sql file. 
  
  The database is connected to the model using SQLAlchemy.
-
-![Diabetes_DB_Erd](./Database/diabetes_db_erd.png)
+![](./Images/)
 
 ## Machine Learning Model:
 
