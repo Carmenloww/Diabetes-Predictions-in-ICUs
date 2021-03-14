@@ -38,7 +38,17 @@ Alternative Hypothesis: Patients admitted to an ICU has not been diagnosed with 
 
 ## Database:
 
- After deciding on the features to use, we selected the relevant data from the Kaggle dataset to create a static sqlite database file using SQLite Studio.  Four tables were identified based on the categories in the data dictionary file  (demographics, vitals, labs and Apache comorbidity).  An ERD (diabetes_db_erd.png) was created initially to view the database schema.  The data from the original dataset was split into four csv files to load to the tables.  The tables are joined via the unique Encounter_ID column as the primary key, included in the query.sql file. The database is connected to the model using SQLAlchemy.
+ After deciding on the features to use, we selected the relevant data from the Kaggle dataset to create a static sqlite database file using SQLite Studio. 
+
+ Four tables were identified based on the categories in the data dictionary file (demographics, vitals, labs and Apache comorbidity).  
+
+ An ERD (diabetes_db_erd.png) was created initially to view the database schema. 
+
+ The data from the original dataset was split into four csv files to load to the tables. 
+ 
+ The tables are joined via the unique Encounter_ID column as the primary key, included in the query.sql file. 
+ 
+ The database is connected to the model using SQLAlchemy.
 
 ![Diabetes_DB_Erd](./Database/diabetes_db_erd.png)
 
