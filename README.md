@@ -33,9 +33,9 @@ The labs.csv contains the data of the lab results and the vitals.csv contains th
 
 Software: 
 - Python 3.9
-- Jupyter Notebook 6.1.4, 
-- Tableau
+- Jupyter Notebook 6.1.4
 - SQLiteStudio
+- Tableau
 
 ## Hypothesis:
 Null Hypothesis: Patients admitted to an ICU has been diagnosed with Diabetes Mellitus.
@@ -57,7 +57,7 @@ Alternative Hypothesis: Patients admitted to an ICU has not been diagnosed with 
  ![Diabetes_DB_Erd](./Database/diabetes_db_erd.png)
 
  The data from the original dataset was split into four csv files to load to the tables. 
- 
+
  ![TrainingWiDS2021_csv](./Images/TrainingWiDS2021_csv.png)
 
  The tables are joined via the unique Encounter_ID column as the primary key, included in the query.sql file. 
