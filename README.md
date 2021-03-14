@@ -52,23 +52,17 @@ Alternative Hypothesis: Patients admitted to an ICU has not been diagnosed with 
 
 ## Machine Learning Model:
 
-### Description of preliminary data preprocessing 
+### Description of preliminary data preprocessing. 
+The dataset has a total of 180 columns and 130,157 rows. Many of the values are missing or filled with NA. We decided to remove all missing values and be left with a dataset that is a little smaller. The cleaned dataset will have all values of the features to successfully train and test the models. 
 
-The dataset has a total of 180 columns and 130,157 rows. Many of the values are missing or filled with NA. 
+### Description of preliminary feature engineering and preliminary feature selection, including their decision-making process. 
+Through our research, we were able to see the major risk factors of Diabetes Mellitus which include family history, being overweight, physical inactivity, age, ethnicity, high blood pressure, impaired glucose tolerance. To find the corresponding variables in the dataset, we have chosen 'age', 'bmi', 'ethnicity', 'gender', 'height', 'weight', 'd1_glucose_max', 'd1_mbp_max' to be the features. In addition to finding out whether a patient in the ICU might have diabetes mellitus, we included features of comorbidity. This is the simultaneous presence of two or more diseases or medical conditions in a patient. These features are included in our dataset as 'aids', 'cirrhosis', 'hepatic_failure', 'immunosuppression', 'leukemia', 'lymphoma', and 'solid_tumor_with_metastasis'.
 
-### Description of preliminary feature engineering and preliminary feature selection, including their decision making process. 
-
-Through our research, we were able to see the major risk factors of Diabetes Mellitus which includes family history, being overweight, physical inactivity, age, ethnicity, high blood pressure, impaired glucose tolerance. To find the corresponding variables in the dataset, we have chosen 'age', 'bmi', 'ethnicity', 'gender', 'height', 'weight', 'd1_glucose_max', 'd1_mbp_max' to be the features.
-
- In addition to finding out whether a patient in the ICU might have diabetes mellitus, we included features of comorbidity. This is the simultaneous presence of two or more diseases or medical conditions in a patient. These features are included in our dataset as 'aids', 'cirrhosis', 'hepatic_failure', 'immunosuppression', 'leukemia', 'lymphoma', and 'solid_tumor_with_metastasis'.
-
-### Description of how data was split into training and testing sets
-
+### Description of how data was split into training and testing sets. 
 Dataset is split into 75% training and 25% testing. 
 
-### Explanation of model choice, including limitations and benefits
-
-Our main goal is to classify a patient with diabetes mellitus or no diabetes mellitus, the Initial approach was a mock model with Logistic Regression. After splitting the dataset into 75% training and 25% testing, the accuracy score is 78.8%. Then we tested the dataset with a decision tree model and random forest model. Both models earned an accuracy score of 71.7% and 78.8% respectively. Overall, the random forest model is the best model for this project since it can handle missing values and interpret non-linear relationships between variables.
+### Explanation of model choice, including limitations and benefits.
+Since our main goal is to classify a patient with diabetes mellitus or no diabetes mellitus, the initial approach was a mock model with Logistic Regression. After splitting the dataset into 75% training and 25% testing, the accuracy score is 78.8%. Then we tested the dataset with a decision tree model and the random forest model. Both models earned an accuracy score of 71.7% and respectively 78.7%. Overall, the logistic regression model is the best model for this project with a sensitivity (recall) rate of 0.95 whereas the decision tree model scored 0.81 and random forest model scored 0.92. Due to the nature of our problem, it is better to have a higher sensitivity so it can detect everyone who might have diabetes mellitus even if it means a certain number of false positive than to miss people who do have diabetes. Afterall, those with a positive result can undergo more testing to confirm or rule out diabetes.
 
 ## Dashboard
 We will use Tableau to create our dashboard. Our interactive element will include ...
