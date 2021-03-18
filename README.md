@@ -61,7 +61,8 @@ Alternative Hypothesis: Patients admitted to an ICU has not been diagnosed with 
  ![TrainingWiDS2021_csv](./Images/TrainingWiDS2021_csv.png)
 
  The tables are joined via the unique Encounter_ID column as the primary key, included in the query.sql file. 
- 
+ ![Sqlitestudio](./Images/sqlitestudio.png)
+
  The database is connected to the model using SQLAlchemy.
 ![ConnectSQL](./Images/ConnectSQL.png)
 
@@ -75,9 +76,20 @@ Through our research, we were able to see the major risk factors of Diabetes Mel
 
 ### Description of how data was split into training and testing sets. 
 Dataset is split into 75% training and 25% testing. 
+![SplitTrainData](./Images/SplitTrainData.png)
 
 ### Explanation of model choice, including limitations and benefits.
 Since our main goal is to classify a patient with diabetes mellitus or no diabetes mellitus, the initial approach was a mock model with Logistic Regression. After splitting the dataset into 75% training and 25% testing, the accuracy score is 78.8%. Then we tested the dataset with a decision tree model and the random forest model. Both models earned an accuracy score of 71.7% and respectively 78.7%. 
+
+
+#### Logistic Regression Model Classification
+![LogisticRegressionModelClassification](./Images/LogisticRegressionModelClassification.png)
+
+#### Decision Tree Model Classification 
+![DecisionTreeClassification](./Images/DecisionTreeClassification.png)
+
+#### Random Forest Model Classification
+![RandomForestModelClassification](./Images/RandomForestModelClassification.png)
 
 Overall, the logistic regression model is the best model for this project with a sensitivity (recall) rate of 0.95 whereas the decision tree model scored 0.81 and random forest model scored 0.92. Due to the nature of our problem, it is better to have a higher sensitivity so it can detect everyone who might have diabetes mellitus even if it means a certain number of false positive than to miss people who do have diabetes. Afterall, those with a positive result can undergo more testing to confirm or rule out diabetes.
 
@@ -85,19 +97,23 @@ Overall, the logistic regression model is the best model for this project with a
 We will use Tableau to create the final dashboard.
 
 We will use Tableau to create the final dashboard. We will have a pie chart of gender, a pie chart of ethnicity, a bar graph of age, a BMI graph, a graph of Day 1 glucose max, a graph of Day 1 mean blood pressure, a graph of the 3 model results, and a heatmap of features correlation to target.
- 
+
+![Dashboard](./Images/Dashboard.png)
+
 Our interactive element will include a graph showing how individual features correlate to each other.
+
+Our 
+[Tableau Dashboard](https://public.tableau.com/profile/elaine.hm#!/vizhome/DiabetesPredictionsinICUs_16151380753230/DiabetesPredictorsinICU?publish=yes).
 
 
 ## Presentation:
 Attached is our [Google Slide Presentation](https://docs.google.com/presentation/d/1SHAZMGU8j-jV8phY3CD1I5t1VpVGjprBJdyDsmeiYfk/edit#slide=id.gc3e862a1f2_0_36).
 
-## Communication Protocols:
-Our communication protocols will consist of using slack to keep in contact in a group chat. Meet during the recommended (Tuesday) and required (Thursday) sessions to work on the project and further discuss the next step. Weekly Zoom calls to discuss the finalization of our decision on our repository to push final codes to the main branch on Sundays.
 
 ## Individual Branches:
 Square: Carmen Low: CL
 
 Triangle: Sydney Chen: SC_model, and SC_readme
 
-Circle: Elaine Martinez: EHM_db, and EHM_db2
+Circle: Elaine Martinez: EHM_db, EHM_db2, and EHM_db3
+
