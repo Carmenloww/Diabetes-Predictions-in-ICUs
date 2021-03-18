@@ -98,12 +98,12 @@ We will use Tableau to create the final dashboard.
 
 We will use Tableau to create the final dashboard. We will have a pie chart of gender, a pie chart of ethnicity, a bar graph of age, a BMI graph, a graph of Day 1 glucose max, a graph of Day 1 mean blood pressure, a graph of the 3 model results, and a heatmap of features correlation to target.
 
-![Dashboard](./Images/dashboard.png)
-
 Our interactive element will include a graph showing how individual features correlate to each other.
 
-Our 
-[Tableau Dashboard](https://public.tableau.com/profile/elaine.hm#!/vizhome/DiabetesPredictionsinICUs_16151380753230/DiabetesPredictorsinICU?publish=yes).
+![Dashboard](./Images/dashboard.png)
+
+
+The link to our [Tableau Dashboard](https://public.tableau.com/profile/elaine.hm#!/vizhome/DiabetesPredictionsinICUs_16151380753230/DiabetesPredictorsinICU?publish=yes).
 
 
 ## Presentation:
