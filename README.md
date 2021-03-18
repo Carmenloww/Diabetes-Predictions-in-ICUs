@@ -103,8 +103,7 @@ Our interactive element will include a graph showing how individual features cor
 ![Dashboard](./Images/dashboard.png)
 
 
-The link to our  
-[Tableau Dashboard](https://public.tableau.com/profile/elaine.hm#!/vizhome/DiabetesPredictionsinICUs_16151380753230/DiabetesPredictorsinICU?publish=yes).
+The link to our [Tableau Dashboard](https://public.tableau.com/profile/elaine.hm#!/vizhome/DiabetesPredictionsinICUs_16151380753230/DiabetesPredictorsinICU?publish=yes).
 
 
 ## Presentation:
