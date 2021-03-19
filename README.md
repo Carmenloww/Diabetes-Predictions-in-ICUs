@@ -90,9 +90,6 @@ Dataset is split into 75% training and 25% testing.
 ### Explanation of model choice, including limitations and benefits:
 Since our main goal is to classify a patient with diabetes mellitus or no diabetes mellitus, the initial approach was a mock model with Logistic Regression. After splitting the dataset into 75% training and 25% testing, the accuracy score is 78.8%. Then we tested the dataset with a decision tree model and the random forest model. Both models earned an accuracy score of 71.7% and respectively 78.7%. 
 
-There are limitations to using a logistic regression model, it is the assumption that the dataset has features that are linearly separable. If we were to add more features into training this model, this can lead to the model being over fit on the training and predicting inaccurate results on the testing set.
-
-
 #### Logistic Regression Model Classification:
 ![LogisticRegressionModelClassification](./Images/LogisticRegressionModelClassification.png)
 
@@ -102,7 +99,10 @@ There are limitations to using a logistic regression model, it is the assumption
 #### Random Forest Model Classification:
 ![RandomForestModelClassification](./Images/RandomForestModelClassification.png)
 
-Overall, the logistic regression model is the best model for this project with a sensitivity (recall) rate of 0.95 whereas the decision tree model scored 0.81 and random forest model scored 0.92. Due to the nature of our problem, it is better to have a higher sensitivity so it can detect everyone who might have diabetes mellitus even if it means a certain number of false positive than to miss people who do have diabetes. Afterall, those with a positive result can undergo more testing to confirm or rule out diabetes.
+
+Overall, the logistic regression model is the best model for this project with a sensitivity (recall) rate of 0.95 whereas the decision tree model scored 0.81 and random forest model scored 0.92. Due to the nature of our problem, it is better to have a higher sensitivity so it can detect everyone who might have diabetes mellitus even if it means a certain number of false positive than to miss people who do have diabetes. Afterall, those with a positive result can undergo more testing to confirm or rule out diabetes. 
+
+There are limitations to using a logistic regression model, it is the assumption that the dataset has features that are linearly separable. If we were to add more features into training this model, this can lead to the model being over fit on the training and predicting inaccurate results on the testing set.
 
 ### Description of how they have trained the model thus far, and any additional training that will take place:
 So far the three models are trained with the cleaned encoded dataset with 113,363 rows and 22 columns of data. This is then split into 75% training and 25% testing. The model with the best accuracy and sensitivity rate is the logistic regression model. To make this model better, additional training might need to be done to improve accuracy. Since the dataset is so large with many features, we can scale the features in our dataset by converting all numerical data which are present in wide range into the same scale. 
