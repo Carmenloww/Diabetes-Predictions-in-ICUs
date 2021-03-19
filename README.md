@@ -1,4 +1,4 @@
-# Diabetes Predictions in ICUs
+# Diabetes in ICUs
 
 ## Topic:
 To determine whether a patient admitted to an ICU has been diagnosed with a particular type of diabetes, Diabetes Mellitus using data from the first 24 hours of intensive care.
@@ -75,33 +75,40 @@ Patients admitted to an ICU has not been diagnosed with Diabetes Mellitus.
 
 ## Machine Learning Model:
 
-### Description of preliminary data preprocessing. 
+### Description of preliminary data preprocessing: 
 The dataset has a total of 180 columns and 130,157 rows. Many of the values are missing or filled with NA. We decided to remove all missing values and be left with a dataset that is a little smaller. The cleaned dataset will have all values of the features to successfully train and test the models. 
 
-### Description of preliminary feature engineering and preliminary feature selection, including their decision-making process. 
+### Description of preliminary feature engineering and preliminary feature selection, including their decision-making process: 
 Through our research, we were able to see the major risk factors of Diabetes Mellitus which include family history, being overweight, physical inactivity, age, ethnicity, high blood pressure, impaired glucose tolerance. To find the corresponding variables in the dataset, we have chosen 'age', 'bmi', 'ethnicity', 'gender', 'height', 'weight', 'd1_glucose_max', 'd1_mbp_max' to be the features. In addition to finding out whether a patient in the ICU might have diabetes mellitus, we included features of comorbidity. This is the simultaneous presence of two or more diseases or medical conditions in a patient. These features are included in our dataset as 'aids', 'cirrhosis', 'hepatic_failure', 'immunosuppression', 'leukemia', 'lymphoma', and 'solid_tumor_with_metastasis'.
 
 ![CorrelationFeatures](./Images/CorrelationFeatures.png)
 
-### Description of how data was split into training and testing sets. 
+### Description of how data was split into training and testing sets:
 Dataset is split into 75% training and 25% testing. 
 ![SplitTrainData](./Images/SplitTrainData.png)
 
-### Explanation of model choice, including limitations and benefits.
+### Explanation of model choice, including limitations and benefits:
 Since our main goal is to classify a patient with diabetes mellitus or no diabetes mellitus, the initial approach was a mock model with Logistic Regression. After splitting the dataset into 75% training and 25% testing, the accuracy score is 78.8%. Then we tested the dataset with a decision tree model and the random forest model. Both models earned an accuracy score of 71.7% and respectively 78.7%. 
 
+There are limitations to using a logistic regression model, it is the assumption that the dataset has features that are linearly separable. If we were to add more features into training this model, this can lead to the model being over fit on the training and predicting inaccurate results on the testing set.
 
-#### Logistic Regression Model Classification
+
+#### Logistic Regression Model Classification:
 ![LogisticRegressionModelClassification](./Images/LogisticRegressionModelClassification.png)
 
-#### Decision Tree Model Classification 
+#### Decision Tree Model Classification:
 ![DecisionTreeClassification](./Images/DecisionTreeClassification.png)
 
-#### Random Forest Model Classification
+#### Random Forest Model Classification:
 ![RandomForestModelClassification](./Images/RandomForestModelClassification.png)
 
 Overall, the logistic regression model is the best model for this project with a sensitivity (recall) rate of 0.95 whereas the decision tree model scored 0.81 and random forest model scored 0.92. Due to the nature of our problem, it is better to have a higher sensitivity so it can detect everyone who might have diabetes mellitus even if it means a certain number of false positive than to miss people who do have diabetes. Afterall, those with a positive result can undergo more testing to confirm or rule out diabetes.
 
+### Description of how they have trained the model thus far, and any additional training that will take place:
+So far the three models are trained with the cleaned encoded dataset with 113,363 rows and 22 columns of data. This is then split into 75% training and 25% testing. The model with the best accuracy and sensitivity rate is the logistic regression model. To make this model better, additional training might need to be done to improve accuracy. Since the dataset is so large with many features, we can scale the features in our dataset by converting all numerical data which are present in wide range into the same scale. 
+
+### Description of current accuracy score:
+The current accuracy score of the logistic regression model is 78.89%
 
 ## Dashboard:
 We will use Tableau to create the final dashboard.
@@ -111,7 +118,6 @@ We will use Tableau to create the final dashboard. We will have a pie chart of g
 Our interactive element will include a graph showing how individual features correlate to each other.
 
 ![Dashboard](./Images/dashboard.png)
-
 
 The link to our [Tableau Dashboard](https://public.tableau.com/profile/elaine.hm#!/vizhome/DiabetesPredictionsinICUs_16151380753230/DiabetesPredictorsinICU?publish=yes).
 
