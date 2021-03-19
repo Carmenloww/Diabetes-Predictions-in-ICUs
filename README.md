@@ -38,13 +38,20 @@ Software:
 - Tableau
 
 ## Hypothesis:
-Null Hypothesis: Patients admitted to an ICU has been diagnosed with Diabetes Mellitus.
 
-Alternative Hypothesis: Patients admitted to an ICU has not been diagnosed with Diabetes Mellitus.
+Null Hypothesis: 
+Patients admitted to an ICU has been diagnosed with Diabetes Mellitus
+
+Alternative Hypothesis: 
+Patients admitted to an ICU has not been diagnosed with Diabetes Mellitus.
+
 
 ## Questions they hope to answer with the data:
-- What are some criteria to diagnose patients with Type 2 Diabetes Mellitus?
-- Whether we can construct a script that suffices to predict who will, under these same circumstances, have diabetes.
+
+1. What features from the dataset are related to risk factors for patients diagnosed with Diabetes Mellitus?
+2. Which feature(s) used for the machine learning models show the highest correlation to Diabetes Mellitus?
+3. Which machine learning model has the highest accuracy and/or sensitivity to predict future cases of Diabetes Mellitus in ICUs?
+4. What other information (ie., relationships) between the features or risk factors and Diabetes Mellitus can we learn from this dataset?
 
 ## Database:
 
