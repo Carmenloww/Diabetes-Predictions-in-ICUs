@@ -81,6 +81,8 @@ The dataset has a total of 180 columns and 130,157 rows. Many of the values are 
 ### Description of preliminary feature engineering and preliminary feature selection, including their decision-making process. 
 Through our research, we were able to see the major risk factors of Diabetes Mellitus which include family history, being overweight, physical inactivity, age, ethnicity, high blood pressure, impaired glucose tolerance. To find the corresponding variables in the dataset, we have chosen 'age', 'bmi', 'ethnicity', 'gender', 'height', 'weight', 'd1_glucose_max', 'd1_mbp_max' to be the features. In addition to finding out whether a patient in the ICU might have diabetes mellitus, we included features of comorbidity. This is the simultaneous presence of two or more diseases or medical conditions in a patient. These features are included in our dataset as 'aids', 'cirrhosis', 'hepatic_failure', 'immunosuppression', 'leukemia', 'lymphoma', and 'solid_tumor_with_metastasis'.
 
+![CorrelationFeatures](./Images/CorrelationFeatures.png)
+
 ### Description of how data was split into training and testing sets. 
 Dataset is split into 75% training and 25% testing. 
 ![SplitTrainData](./Images/SplitTrainData.png)
@@ -99,6 +101,7 @@ Since our main goal is to classify a patient with diabetes mellitus or no diabet
 ![RandomForestModelClassification](./Images/RandomForestModelClassification.png)
 
 Overall, the logistic regression model is the best model for this project with a sensitivity (recall) rate of 0.95 whereas the decision tree model scored 0.81 and random forest model scored 0.92. Due to the nature of our problem, it is better to have a higher sensitivity so it can detect everyone who might have diabetes mellitus even if it means a certain number of false positive than to miss people who do have diabetes. Afterall, those with a positive result can undergo more testing to confirm or rule out diabetes.
+
 
 ## Dashboard:
 We will use Tableau to create the final dashboard.
