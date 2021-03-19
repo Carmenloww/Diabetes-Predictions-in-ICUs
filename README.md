@@ -105,6 +105,9 @@ Overall, the logistic regression model is the best model for this project with a
 ### Description of how they have trained the model thus far, and any additional training that will take place
 So far the three models are trained with the cleaned encoded dataset with 113,363 rows and 22 columns of data. This is then split into 75% training and 25% testing. The model with the best accuracy and sensitivity rate is the logistic regression model. To make this model better, additional training might need to be done to improve accuracy. Since the dataset is so large with many features, we can scale the features in our dataset by converting all numerical data which are present in wide range into the same scale. 
 
+### Description of current accuracy score
+The current accuracy score of the logistic regression model is 78.89%
+
 ## Dashboard:
 We will use Tableau to create the final dashboard.
 
