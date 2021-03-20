@@ -75,7 +75,7 @@ Patients admitted to an ICU has not been diagnosed with Diabetes Mellitus.
 
 ## Machine Learning Model:
 
-### Description of preliminary data preprocessing: 
+### Preliminary Data Preprocessing: 
 The dataset has a total of 180 columns and 130,157 rows. Many of the values are missing or filled with NA. We decided to remove all missing values and be left with a dataset that is a little smaller. The cleaned dataset will have all values of the features to successfully train and test the models. 
 
 ### Description of preliminary feature engineering and preliminary feature selection, including their decision-making process: 
