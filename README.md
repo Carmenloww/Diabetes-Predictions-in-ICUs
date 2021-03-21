@@ -111,11 +111,8 @@ So far the three models are trained with the cleaned encoded dataset with 113,36
 The current accuracy score of the logistic regression model is 78.89%
 
 ## Dashboard:
-We will use Tableau to create the final dashboard.
 
-We will use Tableau to create the final dashboard. We will have a pie chart of gender, a pie chart of ethnicity, a bar graph of age, a BMI graph, a graph of Day 1 glucose max, a graph of Day 1 mean blood pressure, a graph of the 3 model results, and a heatmap of features correlation to target.
-
-Our interactive element will include a graph showing how individual features correlate to each other.
+For the dashboard, we used Tableau to create graphs of the individual features to show the relationships in the data.  There is a total # of ICU patients and patients with diabetes as the subset. For the features, we created a treemap of ethnicity, a pie chart of gender, a treemap of BMI, a bar graph of age, a circle graph of Day 1 glucose max and an area graph of Day 1 mean blood pressure. These graphs of the features are interactive and shows how individual features are related to each other.  From the data, you can see the disproportionate ethnicity group of Caucasions, an indication of data bias. When toggling through the ethnicities, there are slight differences for each feature between each ethnicities.  
 
 ![Dashboard](./Images/dashboard.png)
 
