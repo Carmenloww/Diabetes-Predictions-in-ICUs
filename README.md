@@ -111,11 +111,8 @@ So far the three models are trained with the cleaned encoded dataset with 113,36
 The current accuracy score of the logistic regression model is 78.89%
 
 ## Dashboard:
-We will use Tableau to create the final dashboard.
 
-We will use Tableau to create the final dashboard. We will have a pie chart of gender, a pie chart of ethnicity, a bar graph of age, a BMI graph, a graph of Day 1 glucose max, a graph of Day 1 mean blood pressure, a graph of the 3 model results, and a heatmap of features correlation to target.
-
-Our interactive element will include a graph showing how individual features correlate to each other.
+For the dashboard, we used Tableau to create graphs of the individual features to show the relationships in the data.  There is a total # of ICU patients and patients with diabetes as the subset. For the features, we created a treemap of ethnicity, a pie chart of gender, a treemap of BMI, a bar graph of age, a circle graph of Day 1 glucose max and an area graph of Day 1 mean blood pressure. These graphs of the features are interactive and shows how individual features are related to each other.  From the data, you can see the disproportionate ethnicity group of Caucasions, an indication of data bias. When toggling through the ethnicities, there are slight differences for each feature between each ethnicities.  
 
 ![Dashboard](./Images/dashboard.png)
 
@@ -125,6 +122,15 @@ The link to our [Tableau Dashboard](https://public.tableau.com/profile/elaine.hm
 ## Presentation:
 Attached is our [Google Slide Presentation](https://docs.google.com/presentation/d/1SHAZMGU8j-jV8phY3CD1I5t1VpVGjprBJdyDsmeiYfk/edit#slide=id.gc3e862a1f2_0_36).
 
+
+## Recommendations for Future Analysis
+- Reduce bias in dataset
+- Consider additional features without overfitting
+- Run additional testing with existing models
+- Compare results with deep neural network models
+- Use other complex models (ex., XGBoost)
+
+In our dashboard there is a chart showing the 3 model’s accuracy score. There is an additional re-trained Logistic Model #2 (a 4th accuracy score) showing the new re-trained Logistic model’s accuracy score with 0 increase/decrease in percentage. We re-trained the model by scaling our features. This did not do much for our model and we recommend that for future analysis, we should include more specific features such as ethnicity to normalize the disproportionate distribution in our dataset. Another recommendation would be to run additional tests and to try out a different classification models. 
 
 ## Individual Branches:
 Square: Carmen Low: CL
