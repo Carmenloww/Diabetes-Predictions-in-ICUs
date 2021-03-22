@@ -107,9 +107,6 @@ There are limitations to using a logistic regression model, it is the assumption
 ### Description of how they have trained the model thus far, and any additional training that will take place:
 So far the three models are trained with the cleaned encoded dataset with 113,363 rows and 22 columns of data. This is then split into 75% training and 25% testing. The model with the best accuracy and sensitivity rate is the logistic regression model. To make this model better, additional training might need to be done to improve accuracy. Since the dataset is so large with many features, we can scale the features in our dataset by converting all numerical data which are present in wide range into the same scale. 
 
-### Description of current accuracy score:
-The current accuracy score of the logistic regression model is 78.89%
-
 ## Dashboard:
 
 For the dashboard, we used Tableau to create graphs of the individual features to show the relationships in the data.  There is a total # of ICU patients and patients with diabetes as the subset. For the features, we created a treemap of ethnicity, a pie chart of gender, a treemap of BMI, a bar graph of age, a circle graph of Day 1 glucose max and an area graph of Day 1 mean blood pressure. These graphs of the features are interactive and shows how individual features are related to each other.  From the data, you can see the disproportionate ethnicity group of Caucasions, an indication of data bias. When toggling through the ethnicities, there are slight differences for each feature between each ethnicities.  
@@ -123,7 +120,7 @@ The link to our [Tableau Dashboard](https://public.tableau.com/profile/elaine.hm
 Attached is our [Google Slide Presentation](https://docs.google.com/presentation/d/1SHAZMGU8j-jV8phY3CD1I5t1VpVGjprBJdyDsmeiYfk/edit#slide=id.gc3e862a1f2_0_36).
 
 
-## Recommendations for Future Analysis
+## Recommendations for Future Analysis:
 - Reduce bias in dataset
 - Consider additional features without overfitting
 - Run additional testing with existing models
