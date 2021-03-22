@@ -141,7 +141,7 @@ In our dashboard there is a chart showing the 3 model’s accuracy score. There 
 ## Individual Branches:
 Square: Carmen Low: CL
 
-Triangle: Sydney Chen: SC_model, and SC_readme
+Triangle: Sydney Chen: SC_model, SC_readme, and SC_models_final
 
 Circle: Elaine Martinez: EHM_db, EHM_db2, and EHM_db3
 
