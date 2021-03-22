@@ -112,7 +112,6 @@ After scaling the the x_train and x_test portion of our dataset, the final accur
 
 ![RetrainModelClassification](./Images/RetrainModelClassification.png)
 
-
 ### Conclusion:
 The logistic model built is capable of predicting ICU patients with diabetes mellitus correctly at a rate of 78%. In our correlation heat map, we were able to pick out features that are risk factors of diabetes. The heat map showed the percentage of correlation these features have to diabetes mellitus. The feature with the highest correlation of 40% was the patients day 1 glucose max rate, followed by body mass index and weight. In addition, we included chronic conditions in our features selection to test if the simultaneous presence of two or more diseases or medical conditions will increase an ICU patients chances of having diabetes mellitus. Surprisingly, the correlation of a chronic medical condition to diabetes is relatively low.
 
