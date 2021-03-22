@@ -110,6 +110,9 @@ So far the three models are trained with the cleaned encoded dataset with 113,36
 ### Re-trained model’s confusion matrix and final accuracy score:
 After scaling the the x_train and x_test portion of our dataset, the final accuracy score for the logistic model is 78.90% which is the same as the original model. The sensitivity rate did not change remaining at 0.95. In conclusion, we thought that converting the numerical data to the same range would make a difference in the model’s performance. However, this was not the case. See below for the retrain model’s classification report. 
 
+![RetrainModelClassification](./Images/RetrainModelClassification.png)
+
+
 ### Conclusion:
 The logistic model built is capable of predicting ICU patients with diabetes mellitus correctly at a rate of 78%. In our correlation heat map, we were able to pick out features that are risk factors of diabetes. The heat map showed the percentage of correlation these features have to diabetes mellitus. The feature with the highest correlation of 40% was the patients day 1 glucose max rate, followed by body mass index and weight. In addition, we included chronic conditions in our features selection to test if the simultaneous presence of two or more diseases or medical conditions will increase an ICU patients chances of having diabetes mellitus. Surprisingly, the correlation of a chronic medical condition to diabetes is relatively low.
 
