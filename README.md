@@ -88,7 +88,7 @@ Dataset is split into 75% training and 25% testing.
 ![SplitTrainData](./Images/SplitTrainData.png)
 
 ### Explanation of model choice, including limitations and benefits:
-Since our main goal is to classify a patient with diabetes mellitus or no diabetes mellitus, the initial approach was a mock model with Logistic Regression. After splitting the dataset into 75% training and 25% testing, the accuracy score is 78.8%. Then we tested the dataset with a decision tree model and the random forest model. Both models earned an accuracy score of 71.7% and respectively 78.7%. 
+Since our main goal is to classify a patient with diabetes mellitus or no diabetes mellitus, the initial approach was a mock model with Logistic Regression. After splitting the dataset into 75% training and 25% testing, the accuracy score is 78.90%. Then we tested the dataset with a decision tree model and the random forest model. Both models earned an accuracy score of 71.63% and respectively 78.81%.
 
 #### Logistic Regression Model Classification:
 ![LogisticRegressionModelClassification](./Images/LogisticRegressionModelClassification.png)
