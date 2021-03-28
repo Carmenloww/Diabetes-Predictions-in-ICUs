@@ -135,8 +135,6 @@ Attached is our [Google Slide Presentation](https://docs.google.com/presentation
 - Compare results with deep neural network models
 - Use other complex models (ex., XGBoost)
 
-In our dashboard there is a chart showing the 3 model’s accuracy score. There is an additional re-trained Logistic Model #2 (a 4th accuracy score) showing the new re-trained Logistic model’s accuracy score with 0 increase/decrease in percentage. We re-trained the model by scaling our features. This did not do much for our model and we recommend that for future analysis, we should include more specific features such as ethnicity to normalize the disproportionate distribution in our dataset. Another recommendation would be to run additional tests and to try out a different classification models. 
-
 ## Individual Branches:
 Square: Carmen Low: CL
 
